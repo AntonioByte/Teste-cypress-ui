@@ -32,7 +32,7 @@ context('Funcionalidade de login', () => {
     });
 });
 
-function realizarCadastro(usuario, senha, {}) {
+function realizarCadastro(usuario, senha) {
     cy.get('#username').type(usuario)
     cy.get('#password').type(senha, {log: false})
     cy.get('.woocommerce-form > .button').click()

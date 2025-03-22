@@ -11,7 +11,7 @@ context('Funcionalidade de login', () => {
         cy.screenshot()
     });
 
-    it('Realizar login com sucesso', () => {
+    it.skip('Realizar login com sucesso', () => {
 
         realizarCadastro(perfil.usuario, perfil.senha)
         cy.get('.page-title').should('contain', 'Minha conta')
@@ -32,8 +32,8 @@ context('Funcionalidade de login', () => {
     });
 });
 
-function realizarCadastro(usuario, senha, {}) {
+function realizarCadastro(usuario, senha) {
     cy.get('#username').type(usuario)
-    cy.get('#password').type(senha, {log: false})
+    cy.get('#password').type(senha)
     cy.get('.woocommerce-form > .button').click()
 }

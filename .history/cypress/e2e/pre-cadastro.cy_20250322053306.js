@@ -4,7 +4,7 @@ const { Faker, fakerPT_BR } = require('@faker-js/faker');
 describe('Funcionalidade Pré Cadastro', () => {
 
     beforeEach(() => {
-        cy.visit('minha-conta')
+        cy.visit('http://lojaebac.ebaconline.art.br/minha-conta')
     });
 
     it.skip('Não preencher campos obrigatórios', () => {

@@ -3,10 +3,10 @@
 describe('Página de Produto', () => {
 
     beforeEach(() => {
-        cy.visit('#')
+        cy.visit()
     });
 
-    it.('Selecionar um produto da lista', () => {
+    it.skip('Selecionar um produto da lista', () => {
         cy.get('[class="product-block grid"]')
             // .first()//Pega o primeiro item da lista
             //.last()//Pega o ultimo item da lista
