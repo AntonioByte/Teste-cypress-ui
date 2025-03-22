@@ -6,9 +6,6 @@ context('Funcionalidade de login', () =>{
         cy.visit('http://lojaebac.ebaconline.art.br/minha-conta/')
     });
     
-    afterEach(() => {
-        cy.screenshot()
-    });
     
     it.skip('Deve fazer login com sucesso', () => {
         
@@ -20,7 +17,6 @@ context('Funcionalidade de login', () =>{
     });
 
     it('Deve exibir um erro', () => {
-
         cy.get('#username').type('aluno_ebac@teste.com')
         cy.get('#password').type('teste@teste')
         cy.get('.woocommerce-form > .button').click()
