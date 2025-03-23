@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 const perfil = require('../fixtures/perfil.json')
-
+//const baseurl
 context('Funcionalidade de login', () => {
 
     beforeEach(() => {
