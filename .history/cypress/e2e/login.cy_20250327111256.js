@@ -24,7 +24,7 @@ context('Funcionalidade de login', () => {
         cy.get('.woocommerce-error > li').should('contain', 'Erro: A senha fornecida para o e-mail aluno_ebac@teste.com está incorreta.')
     });
 
-    it('Realizar login com sucesso usando fixture', () => {
+    it.('Realizar login com sucesso usando fixture', () => {
        
         cy.fixture("perfil").then(dados => {
             realizarCadastro(dados.usuario, dados.senha)
