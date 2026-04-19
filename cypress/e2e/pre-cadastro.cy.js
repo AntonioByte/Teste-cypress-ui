@@ -7,9 +7,9 @@ describe('Funcionalidade Pré Cadastro', () => {
         cy.visit('minha-conta')
     });
 
-    it.skip('Não preencher campos obrigatórios', () => {
+    it.only('Não preencher campos obrigatórios', () => {
 
-        preencherPreFormulario()
+        naoPreencherPreFormulario()
         cy.get('[data-id="account_first_name"]').should('contain', 'Nome é um campo obrigatório.')
         cy.get('[data-id="account_last_name"]').should('contain', 'Sobrenome é um campo obrigatório.')
     });
@@ -23,14 +23,25 @@ describe('Funcionalidade Pré Cadastro', () => {
 
 
 });
-
-function preencherPreFormulario(nome , sobrenome ) {
-    cy.get('#reg_email').type(fakerPT_BR.internet.email({firstName: nome, lastName: sobrenome}))
+function preencherPreFormulario(nome, sobrenome) {
+    cy.get('#reg_email').type(fakerPT_BR.internet.email({ firstName: nome, lastName: sobrenome }))
     cy.get('#reg_password').type('H5YcXGhnhSYWU2w')
     cy.get('[name="register"]').click()
     cy.contains('editar sua senha e detalhes da conta').click()
     cy.get('#account_first_name').type(nome)
     cy.get('#account_last_name').type(sobrenome)
     cy.get('.woocommerce-Button').click()
-    
+
 }
+function naoPreencherPreFormulario(nome, sobrenome) {
+    cy.get('#reg_email').type(fakerPT_BR.internet.email({ firstName: nome, lastName: sobrenome }))
+    cy.get('#reg_password').type('H5YcXGhnhSYWU2w')
+    cy.get('[name="register"]').click()
+    cy.contains('editar sua senha e detalhes da conta').click()
+    //cy.get('#account_first_name').type(nome).clear()
+    //cy.get('#account_last_name').type(sobrenome).clear()
+    cy.get('.woocommerce-Button').click()
+
+}
+
+
