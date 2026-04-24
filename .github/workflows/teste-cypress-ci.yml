@@ -24,4 +24,4 @@ jobs:
       run: npm install
       
     - name: Executar teste
-      run: npm cy:run
+      run: npm run cy:run
