@@ -23,5 +23,5 @@ jobs:
     - name: Instalar instâncias
       run: npm install
       
-    - name: Instalar instâncias
+    - name: Executar teste
       run: npm cy:run

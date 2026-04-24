@@ -21,9 +21,9 @@
   },
   "homepage": "https://github.com/AntonioByte/Teste-cypress-ui#readme",
   "devDependencies": {
-    "cypress": "^12.17.4"
+    "cypress": "^15.14.0"
   },
   "dependencies": {
-    "@faker-js/faker": "^9.6.0"
+    "@faker-js/faker": "^9.9.0"
   }
 }
