@@ -7,8 +7,9 @@
     "test": "npx cypress run",
     "cy:run": "npx cypress run",
     "cy:open": "npx cypress open",
-    "allure-report": "npx allure serve --clear allure-results",
-    "cy:report": "npx cypress run --record --key 64e717db-109a-4efc-b470-b55576b58fda"
+    "allure-report": "npx allure generate allure-results --clean -o allure-report",
+    "cy:report": "npx cypress run --record --key 64e717db-109a-4efc-b470-b55576b58fda",
+    "report-local": "npx allure serve --clear allure-results"
   },
   "repository": {
     "type": "git",
