@@ -25,3 +25,6 @@ jobs:
       
     - name: Executar teste
       run: npm run cy:run
+
+    - name: Gerar reporte
+      run: npm run allure-report

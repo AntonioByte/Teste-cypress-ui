@@ -7,6 +7,7 @@
     "test": "npx cypress run",
     "cy:run": "npx cypress run",
     "cy:open": "npx cypress open",
+    "allure-report": "npx allure serve --clear allure-results",
     "cy:report": "npx cypress run --record --key 64e717db-109a-4efc-b470-b55576b58fda"
   },
   "repository": {
@@ -21,6 +22,7 @@
   },
   "homepage": "https://github.com/AntonioByte/Teste-cypress-ui#readme",
   "devDependencies": {
+    "allure-cypress": "^3.7.1",
     "cypress": "^15.14.0"
   },
   "dependencies": {
