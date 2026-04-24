@@ -1,4 +1,4 @@
-
+/// <reference types="cypress"/>
 
 describe('Página de Produto', () => {
 
@@ -14,7 +14,7 @@ describe('Página de Produto', () => {
             .click()
     });
 
-    it('Adicionar um produto ao carrinho', () => {
+    it.only('Adicionar um produto ao carrinho', () => {
         cy.get('[class="product-block grid"]')
             .eq(3)
             .click()
@@ -23,7 +23,10 @@ describe('Página de Produto', () => {
         cy.get('.input-text').clear().type('2')
         cy.get('.single_add_to_cart_button').click()
         cy.get('.dropdown-toggle > .text-skin > .icon-basket').click()
-        cy.get('[class="woocommerce-message"]').contains('” foram adicionados no seu carrinho.')
+        cy.get('.product_title').invoke('text').then((produto) => {
+            cy.get('[class="woocommerce-message"]').should('contain',`“${produto}” foram adicionados no seu carrinho.`)
+        })
+        
 
         //cy.get('.product_title').invoke('text') +
     });
