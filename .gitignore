@@ -43,6 +43,7 @@ node_modules/
 jspm_packages/
 screenshots/
 allure-results/
+.history/
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
