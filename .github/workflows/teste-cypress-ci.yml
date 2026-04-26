@@ -15,12 +15,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-
-    - name: Setup Java
-      uses: actions/setup-java@v4
-      with:
-        distribution: 'temurin'
-        java-version: '17'
         
     - name: Use Node.js 
       uses: actions/setup-node@v4
