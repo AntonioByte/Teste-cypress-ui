@@ -1,1 +1,1 @@
-{"id":"3e1c5cf8f573f1bb2e191fd8ae4ed2dd","fullName":"cypress/e2e/pre-cadastro.cy.js#Funcionalidade Pré Cadastro Não preencher campos obrigatórios","name":"Não preencher campos obrigatórios","status":"passed","testResultsByEnv":{"default":"358a37093c41f9ed25741ae13a0e0145"}}
+{"id":"3e1c5cf8f573f1bb2e191fd8ae4ed2dd","fullName":"cypress/e2e/pre-cadastro.cy.js#Funcionalidade Pré Cadastro Não preencher campos obrigatórios","name":"Não preencher campos obrigatórios","status":"failed","testResultsByEnv":{"default":"058ef3c62ea5cbfd38bc380451f5d233"}}
