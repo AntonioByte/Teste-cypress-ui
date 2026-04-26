@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/AntonioByte/Teste-cypress-ui#readme",
   "devDependencies": {
-    "allure-commandline": "^2.39.0",
+    "allure-commandline": "^2.38.1",
     "allure-cypress": "^3.7.1",
     "cypress": "^15.14.0"
   },
